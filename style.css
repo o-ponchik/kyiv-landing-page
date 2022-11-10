@@ -55,6 +55,13 @@ img {
   top: 9rem;
   left: -0.7rem;
   transform: rotate(-10deg);
+  width: 100%;
+}
+
+.main-page .img-2-main-page,
+.img-3-main-page,
+.img-4-main-page {
+  width: 42%;
 }
 
 .main-page .img-2-main-page {
@@ -226,17 +233,58 @@ h2 .strike-word {
   right: 15%;
 }
 
-/* responsive */
+/* responsive *********************************************/
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 7.4vw;
+  }
+}
 
-/* phone */
-@media screen and (max-width: 480px) {
+/* galaxy fold */
+@media screen and (max-width: 280px) {
   h1 {
     font-size: 8vw;
   }
 
   .main-page {
     height: 50vh;
-    margin-bottom: 5rem;
+    margin: 2rem 0 0rem;
+  }
+
+  .main-page .img-1-main-page {
+    top: 3rem;
+    left: -1rem;
+    transform: rotate(-4deg);
+  }
+
+  .main-page .img-2-main-page {
+    top: 6rem;
+    left: 3rem;
+    transform: rotate(14deg);
+  }
+
+  .main-page .img-3-main-page {
+    top: 1.5rem;
+    left: 6rem;
+    transform: rotate(2deg);
+  }
+
+  .main-page .img-4-main-page {
+    top: 7rem;
+    left: 7rem;
+    transform: rotate(-2deg);
+  }
+}
+
+/* phone */
+@media screen and (min-width: 281px) and (max-width: 480px) {
+  h1 {
+    font-size: 8vw;
+  }
+
+  .main-page {
+    height: 50vh;
+    margin: 2rem 0 0rem;
   }
 
   .main-page .img-1-main-page {
@@ -247,7 +295,7 @@ h2 .strike-word {
 
   .main-page .img-2-main-page {
     top: 9rem;
-    left: 2rem;
+    left: 3rem;
     transform: rotate(14deg);
   }
 
@@ -265,21 +313,102 @@ h2 .strike-word {
 }
 
 /* tablet */
-@media screen and (min-width: 480px) {
-  h1 {
-    color: blue;
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .main-page {
+    height: 60vh;
+    margin: 2rem 0 5rem;
+  }
+
+  .main-page .img-1-main-page {
+    top: 6rem;
+    left: -1rem;
+    transform: rotate(-4deg);
+  }
+
+  .main-page .img-2-main-page {
+    top: 13rem;
+    left: 8rem;
+    transform: rotate(14deg);
+  }
+
+  .main-page .img-3-main-page {
+    top: 1rem;
+    left: 11rem;
+    transform: rotate(2deg);
+  }
+
+  .main-page .img-4-main-page {
+    top: 11rem;
+    left: 15rem;
+    transform: rotate(-2deg);
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .main-page {
+    height: 60vh;
+    margin: 2rem 0 5rem;
+  }
+
+  .main-page .img-1-main-page {
+    top: 11rem;
+    left: -1rem;
+    transform: rotate(-4deg);
+  }
+
+  .main-page .img-2-main-page {
+    top: 17rem;
+    left: 10rem;
+    transform: rotate(14deg);
+  }
+
+  .main-page .img-3-main-page {
+    top: 2rem;
+    left: 18rem;
+    transform: rotate(2deg);
+  }
+
+  .main-page .img-4-main-page {
+    top: 17rem;
+    left: 21rem;
+    transform: rotate(-2deg);
   }
 }
 
 /* laptop */
-@media screen and (min-width: 768px) {
-  h1 {
-    color: blueviolet;
+@media screen and (min-width: 769px) and (max-width: 1020px) {
+  .main-page {
+    height: 60vh;
+    margin: 2rem 0 3rem;
+  }
+
+  .main-page .img-1-main-page {
+    top: 11rem;
+    left: -1rem;
+    transform: rotate(-4deg);
+  }
+
+  .main-page .img-2-main-page {
+    top: 17rem;
+    left: 10rem;
+    transform: rotate(14deg);
+  }
+
+  .main-page .img-3-main-page {
+    top: 2rem;
+    left: 18rem;
+    transform: rotate(2deg);
+  }
+
+  .main-page .img-4-main-page {
+    top: 17rem;
+    left: 21rem;
+    transform: rotate(-2deg);
   }
 }
 
 /* desctop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1021px) {
   h1 {
     color: #fff;
   }
