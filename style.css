@@ -2,6 +2,12 @@ html {
   font-size: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -21,6 +27,12 @@ p {
   letter-spacing: 0.085em;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -31,35 +43,35 @@ p {
 
 /* Images on main page */
 .main-page {
-  margin-bottom: 25rem;
+  height: 100vh;
+  margin-bottom: 15rem;
 }
 
 .main-page img {
   box-shadow: 0 0 8px 8px rgba(11, 11, 11, 0.377);
-  border-radius: 5px;
 }
 
 .main-page .img-1-main-page {
-  top: 150px;
-  left: -10px;
+  top: 9rem;
+  left: -0.7rem;
   transform: rotate(-10deg);
 }
 
 .main-page .img-2-main-page {
-  top: 290px;
-  left: 280px;
+  top: 18rem;
+  left: 17rem;
   transform: rotate(-4deg);
 }
 
 .main-page .img-3-main-page {
-  top: 40px;
-  left: 450px;
+  top: 2.5rem;
+  left: 28rem;
   transform: rotate(3deg);
 }
 
 .main-page .img-4-main-page {
-  top: 380px;
-  left: 500px;
+  top: 24rem;
+  left: 31rem;
   transform: rotate(12deg);
 }
 
@@ -69,7 +81,7 @@ p {
 
 .heading-box {
   z-index: 1;
-  padding-top: 25%;
+  padding-top: 20%;
   background-color: transparent;
 }
 
@@ -138,7 +150,6 @@ h2 .strike-word {
 .wrapper-3d img {
   width: 20vw;
   height: 60vh;
-  border-radius: 5px;
 }
 
 .wrapper-3d .img-3pg-1 {
@@ -172,7 +183,6 @@ h2 .strike-word {
   width: 55vw;
   right: 0;
   top: 10rem;
-  border-radius: 5px;
 }
 
 .wrapper-4th .content-4d-pg {
@@ -214,4 +224,63 @@ h2 .strike-word {
 .pg-7th-heading-right {
   top: 80%;
   right: 15%;
+}
+
+/* responsive */
+
+/* phone */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 8vw;
+  }
+
+  .main-page {
+    height: 50vh;
+    margin-bottom: 5rem;
+  }
+
+  .main-page .img-1-main-page {
+    top: 3rem;
+    left: -1rem;
+    transform: rotate(-4deg);
+  }
+
+  .main-page .img-2-main-page {
+    top: 9rem;
+    left: 2rem;
+    transform: rotate(14deg);
+  }
+
+  .main-page .img-3-main-page {
+    top: 2rem;
+    left: 7rem;
+    transform: rotate(2deg);
+  }
+
+  .main-page .img-4-main-page {
+    top: 9rem;
+    left: 9rem;
+    transform: rotate(-2deg);
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 480px) {
+  h1 {
+    color: blue;
+  }
+}
+
+/* laptop */
+@media screen and (min-width: 768px) {
+  h1 {
+    color: blueviolet;
+  }
+}
+
+/* desctop */
+@media screen and (min-width: 1024px) {
+  h1 {
+    color: #fff;
+  }
 }
