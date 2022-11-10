@@ -120,15 +120,18 @@ h2 {
   margin: 8rem 0;
 }
 
+.img-box {
+  height: inherit;
+}
+
 .img-second-pg {
   top: 10%;
   width: 90%;
-  /* max-width: 600vw;
-  max-height: 400vh; */
   z-index: 0;
 }
 
 .blue-container h2 {
+  position: absolute;
   top: 10%;
   left: 30%;
   z-index: 1;
@@ -141,7 +144,7 @@ h2 .strike-word {
 }
 
 .content-sc-pg {
-  padding-right: 10%;
+  padding-right: 7%;
 }
 
 .content-sc-pg h3 {
@@ -240,10 +243,47 @@ h2 .strike-word {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .blue-container {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .img-box {
+    height: 280px;
+    width: 100%;
+  }
+
+  .img-box .img-second-pg {
+    width: 98%;
+    top: 0;
+  }
+
+  .blue-container h2 {
+    position: static;
+    text-align: center;
+    z-index: 1;
+    font-size: 9vw;
+    margin-top: 2rem;
+  }
+
+  .blue-container .content-sc-pg {
+    padding: 1rem 2rem;
+  }
+
+  .blue-container h3 {
+    margin: 1rem 0;
+  }
+}
+
 /* galaxy fold */
 @media screen and (max-width: 280px) {
   h1 {
     font-size: 8vw;
+  }
+
+  h2 {
+    font-size: 7vw;
   }
 
   .main-page {
@@ -342,6 +382,11 @@ h2 .strike-word {
     left: 15rem;
     transform: rotate(-2deg);
   }
+
+  /* #2 */
+  .content-sc-pg {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
@@ -372,6 +417,11 @@ h2 .strike-word {
     top: 17rem;
     left: 21rem;
     transform: rotate(-2deg);
+  }
+
+  /* #2 */
+  .content-sc-pg {
+    padding-right: 7%;
   }
 }
 
