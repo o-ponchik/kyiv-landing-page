@@ -776,10 +776,12 @@ h2 .strike-word {
     height: 100vh;
   }
 
-  .wrapper-3d .img-3pg-3,
-  .img-3pg-1 {
-    top: 20rem;
-    right: 17%;
+  .wrapper-3d .img-3pg-1 {
+    top: 22rem;
+  }
+
+  .wrapper-3d .img-3pg-3 {
+    top: 22rem;
   }
 
   .wrapper-5th {
