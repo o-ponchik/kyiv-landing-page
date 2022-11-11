@@ -739,9 +739,40 @@ h2 .strike-word {
   }
 }
 
-/* desctop */
-@media screen and (min-width: 1021px) {
-  h1 {
-    color: #fff;
+/* large screen */
+@media screen and (min-width: 1400px) {
+  .main-page {
+    height: 170vh;
+  }
+
+  .main-page .img-1-main-page {
+    top: 11rem;
+    left: -1rem;
+    transform: rotate(-4deg);
+  }
+
+  .main-page .img-2-main-page {
+    top: 34rem;
+    left: 22rem;
+    transform: rotate(14deg);
+  }
+
+  .main-page .img-3-main-page {
+    top: 2rem;
+    left: 42rem;
+    transform: rotate(2deg);
+  }
+
+  .main-page .img-4-main-page {
+    top: 29rem;
+    left: 44rem;
+    transform: rotate(-2deg);
+  }
+
+  .blue-container,
+  .wrapper-3d,
+  .wrapper-4th,
+  .wrapper-5th {
+    height: 160vh;
   }
 }
