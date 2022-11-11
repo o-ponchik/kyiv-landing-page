@@ -38,6 +38,19 @@ a {
   color: #fff95071;
 }
 
+h1 {
+  font-size: 5.5vw;
+  text-shadow: 2px 2px 7px #000000;
+  font-weight: 500;
+  line-height: 94.5%;
+  margin-right: 13%;
+  animation: fade-right 1s ease-in;
+}
+
+h2 {
+  font-size: 5vw;
+}
+
 /* animation */
 .reveal {
   transform: translateY(150px);
@@ -118,23 +131,7 @@ a {
   left: -0.7rem;
   transform: rotate(-10deg);
   width: 100%;
-  animation: img1 1s ease-out 150ms forwards;
-}
-
-@keyframes img1 {
-  from {
-    top: 7rem;
-    left: -12rem;
-
-    opacity: 0;
-  }
-
-  to {
-    top: 9rem;
-    left: -0.7rem;
-
-    opacity: 1;
-  }
+  animation: appear 2s ease-out 150ms forwards;
 }
 
 .main-page .img-2-main-page,
@@ -147,57 +144,30 @@ a {
   top: 18rem;
   left: 17rem;
   transform: rotate(-4deg);
-  animation: img2 2s ease-out 150ms forwards;
-}
-
-@keyframes img2 {
-  from {
-    top: 28rem;
-    left: 7rem;
-    opacity: 0;
-  }
-
-  to {
-    top: 18rem;
-    left: 17rem;
-    opacity: 1;
-  }
+  animation: appear 2s ease-out 150ms forwards;
 }
 
 .main-page .img-3-main-page {
   top: 2.5rem;
   left: 28rem;
   transform: rotate(3deg);
-  animation: img3 1.5s ease-out 150ms forwards;
-}
-
-@keyframes img3 {
-  from {
-    left: 38rem;
-    opacity: 0;
-  }
-
-  to {
-    left: 28rem;
-    opacity: 1;
-  }
+  animation: appear 1.5s ease-out 150ms forwards;
 }
 
 .main-page .img-4-main-page {
   top: 24rem;
   left: 31rem;
   transform: rotate(12deg);
-  animation: img4 1.7s ease-out 150ms forwards;
+  animation: appear 1.7s ease-out 150ms forwards;
 }
 
-@keyframes img4 {
+@keyframes appear {
   from {
-    top: 34rem;
     opacity: 0;
+    transform: rotate(5deg);
   }
 
   to {
-    top: 24rem;
     opacity: 1;
   }
 }
@@ -210,18 +180,6 @@ a {
   z-index: 1;
   padding-top: 20%;
   background-color: transparent;
-}
-
-h1 {
-  font-size: 5.5vw;
-  text-shadow: 2px 2px 7px #000000;
-  font-weight: 500;
-  line-height: 94.5%;
-  margin-right: 13%;
-}
-
-h2 {
-  font-size: 5vw;
 }
 
 .blue-span-txt {
