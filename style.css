@@ -775,4 +775,14 @@ h2 .strike-word {
   .wrapper-5th {
     height: 100vh;
   }
+
+  .wrapper-3d .img-3pg-3,
+  .img-3pg-1 {
+    top: 20rem;
+    right: 17%;
+  }
+
+  .wrapper-5th {
+    margin: 5% 0 5%;
+  }
 }
