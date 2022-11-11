@@ -742,7 +742,7 @@ h2 .strike-word {
 /* large screen */
 @media screen and (min-width: 1400px) {
   .main-page {
-    height: 170vh;
+    height: 100vh;
   }
 
   .main-page .img-1-main-page {
@@ -773,6 +773,6 @@ h2 .strike-word {
   .wrapper-3d,
   .wrapper-4th,
   .wrapper-5th {
-    height: 160vh;
+    height: 100vh;
   }
 }
