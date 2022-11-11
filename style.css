@@ -38,6 +38,63 @@ a {
   color: #fff95071;
 }
 
+/* animation */
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ---------------------------- */
+
 .container-fluid {
   padding: 0;
 }
@@ -61,6 +118,23 @@ a {
   left: -0.7rem;
   transform: rotate(-10deg);
   width: 100%;
+  animation: img1 1s ease-out 150ms forwards;
+}
+
+@keyframes img1 {
+  from {
+    top: 7rem;
+    left: -12rem;
+
+    opacity: 0;
+  }
+
+  to {
+    top: 9rem;
+    left: -0.7rem;
+
+    opacity: 1;
+  }
 }
 
 .main-page .img-2-main-page,
@@ -73,18 +147,59 @@ a {
   top: 18rem;
   left: 17rem;
   transform: rotate(-4deg);
+  animation: img2 2s ease-out 150ms forwards;
+}
+
+@keyframes img2 {
+  from {
+    top: 28rem;
+    left: 7rem;
+    opacity: 0;
+  }
+
+  to {
+    top: 18rem;
+    left: 17rem;
+    opacity: 1;
+  }
 }
 
 .main-page .img-3-main-page {
   top: 2.5rem;
   left: 28rem;
   transform: rotate(3deg);
+  animation: img3 1.5s ease-out 150ms forwards;
+}
+
+@keyframes img3 {
+  from {
+    left: 38rem;
+    opacity: 0;
+  }
+
+  to {
+    left: 28rem;
+    opacity: 1;
+  }
 }
 
 .main-page .img-4-main-page {
   top: 24rem;
   left: 31rem;
   transform: rotate(12deg);
+  animation: img4 1.7s ease-out 150ms forwards;
+}
+
+@keyframes img4 {
+  from {
+    top: 34rem;
+    opacity: 0;
+  }
+
+  to {
+    top: 24rem;
+    opacity: 1;
+  }
 }
 
 .img-box {
@@ -207,7 +322,7 @@ h2 .strike-word {
 
 /* #5 page */
 .wrapper-5th {
-  /* margin: 7rem 0 0; */
+  margin: 5% 0 20%;
   height: 70vh;
 }
 
